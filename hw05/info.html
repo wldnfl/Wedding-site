@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <title>신상정보</title>
+    <style>
+        #m:hover{text-decoration: overline;
+            background-color: yellow;
+        }
+    </style>
+</head>
+    <body>
+        <center>
+            <h2>&lt;신상정보&gt;</h2>
+        <table width="270">
+            <tr>
+                <th>이름:</th>
+                <th>이지우</th>
+            </tr>
+            <tr>
+                <th>생년월일:</th>
+                <th><input type="date" name="birth"></th>
+            </tr>
+            <tr>
+                
+                <th id="m"><a href="https://www.16personalities.com/ko" target="_blank">MBTI:</th></a>
+                <th>
+                    <input type="radio" name="mbti" value="1">INFP
+                    <input type="radio" name="mbti" value="2" checked>ISFP
+                    <input type="radio" name="mbti" value="3">ISTP
+                </th>
+            </tr>
+            <tr>
+                <th>학과:</th>
+                <th>
+                    <label>
+                        <select name="major">
+                            <optgroup label="인문대학">
+                                <option>국어국문학과</option>
+                                <option>문예창작과</option>
+                                <option>영어과</option>
+                                <option>중어중국학과</option>
+                            </optgroup>
+                            <optgroup label="사회과학대학">
+                                <option>경영학과</option>
+                                <option>사회복지학과</option>
+                                <option>아동학과</option>
+                            </optgroup>
+                            <optgroup label="자연정보과학대학">
+                                <option>응용화학전공</option>
+                                <option>화장품학전공</option>
+                                <option>식품영양학과</option>
+                                <option selected>컴퓨터학과</option>
+                            </optgroup>
+                            <optgroup label="공연예술대학">
+                                <option>방송연예과</option>
+                                <option>실용음악과</option>
+                                <option>무용과</option>
+                                <option>모델과</option>
+                            </optgroup>
+                        </select>
+                    </label>
+
+                </th>
+            </tr>
+            <tr>
+                <th>대학교:</th>
+                <th><a href="https://www.dongduk.ac.kr/kor/main.do" target="_blank">동덕여자대학교</a></th>
+                
+            </tr>
+            <tr>
+                <th>학번:</th>
+                <th>20210805</th>
+            </tr>
+            <tr>
+                <th>메일주소:</th>
+                <th><a href="mailto:zlzmwkwldn@naver.com">네이버메일</th></a>
+            </tr>
+        </center>
+    </body>
