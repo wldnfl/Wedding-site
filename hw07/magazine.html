@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<head>
+    <title>화보</title>
+    <style>
+        * {
+            background-color: aliceblue;
+        }
+
+        #div1 {
+            overflow: auto;
+            padding: 30px;
+            margin: 40px;
+        }
+
+        #div3 {
+            overflow: auto;
+            margin: 30px;
+        }
+
+        #a {
+            box-shadow: 15px 10px 10px rgb(38, 36, 36);
+        }
+
+        hr {
+            background-color: brown;
+        }
+        table{
+            border: 1;
+            border-collapse: collapse;
+        }
+          
+    </style>
+</head>
+
+<body>
+    <center>
+        <a href="hw07.html">
+            <img src="./img/logo.png" width="150" height="80"></a>
+    </center>
+    <div id="div1">
+        <img src="./img/Cosmopolitan.png" alt="cosmopolitan" width="192" height="108">
+        <div id="div3">
+            <img src="./img/코스모폴리탄(1).jpg" width="370" height="475" id="a">
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <img src="./img/코스모폴리탄(2).jpg" width="366.5" height="475" id="a">
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <img src="./img/코스모폴리탄(3).jpg" width="366.5" height="475" id="a">
+        </div>
+        줌터뷰 보러가기
+        <a href="https://youtu.be/n6-c7FQaSXw" target="_blank">
+            <img src="./img/video.png" width="30" height="25">
+        </a>
+    </div>
+    <hr>
+    <div id="div1">
+        <img src="./img/vogue.png" width="154.4" height="41">
+        <div id="div3">
+            <img src="./img/보그(1).jpg" width="373.2" height="560" id="a">
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <img src="./img/보그(2).jpg" width="560" height="373.2" id="a">
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <img src="./img/보그(3).jpg" width="373.2" height="560" id="a">
+        </div>
+        HELLO VOGUE 보러가기
+        <a href="https://youtu.be/pF8gAWAFLfc" target="_blank">
+            <img src="./img/video.png" width="30" height="25">
+        </a>
+    </div>
+    <hr>
+    <div id="div1">
+        <h4>공동구매를 원하시는 분들은 아래 양식에 맞춰 작성해주세요.</h4>
+        <h2>구매 양식</h2>
+        <table border="1">
+            <tr>
+                <th colspan="2"><b>화보 공동구매 양식</b></th>
+            </tr>
+            <tr>
+                <th>닉네임</th>
+                <td>
+                    <input type="text" size="9px" required>
+                </td>
+            </tr>
+            <tr>
+                <th>패스워드</th>
+                <td colspan="2">
+                    <input type="password" size="9px" required>
+                </td>
+            </tr>
+            <tr>
+                <th>구매수량</th>
+                <td colspan="2">
+                    <label><input type="radio" name="buy" value="0">1</label>
+                    <label><input type="radio" name="buy" value="1">2</label>
+                    <label><input type="radio" name="buy" value="2">3</label>
+                    <label><input type="radio" name="buy" value="3">4</label>
+                    &nbsp;&nbsp; *1인당 최대 4개 구매 가능
+                </td>
+            </tr>
+           
+            <tr>
+                <th>휴대폰</th>
+                <td colspan="2">
+                    <select name="phone">
+                        <option value="1" selected>010</option>
+                        <option value="2">011</option>
+                        <option value="3">017</option>
+                    </select>
+                    -
+                    <input type="text" size="5px">
+                    -
+                    <input type="text" size="5px">
+                </td>
+            </tr>
+            <tr>
+                <th>이메일</th>
+                <td colspan="2">
+                    <input type="email" size="30px">
+                </td>
+            </tr>
+            <tr>
+                <th>주소</th>
+                <td colspan="2">
+                    <input type="text" size="30px">
+                    <input type="button" value="주소 찾기">
+                </td>
+            </tr>
+            <tr>
+                <th id="hi">요청사항</th>
+                <td colspan="2">
+                    <textarea rows="5" cols="57">내용 입력</textarea>
+                </td>
+            <tr>
+                <th colspan="2">
+                    <input type="submit" value="작성완료">
+                    <input type="reset" value="다시작성">
+                </th>
+            </tr>
+        </table>
+    </div>
+</body>

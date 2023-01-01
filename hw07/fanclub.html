@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<head>
+    <title>팬클럽 가입</title>
+</head>
+
+<style>
+    table {
+        border: 1px solid #828282;
+        width: 475px;
+        empty-cells: show;
+        border-collapse: collapse;
+    }
+
+    td {
+        border: 1px solid #828282;
+        width: 200px;
+        height: 20px;
+        text-align: left;
+        vertical-align: middle;
+    }
+
+    th {
+        background-color: #ececec;
+        border: 1px solid #828282;
+        width: 70px;
+    }
+
+    #ad {
+        padding: 50px;
+    }
+
+    #advan {
+        margin: 50px;
+    }
+
+    #advan div {
+        height: 140px;
+        margin: 0 15px 0 15px;
+    }
+
+    #advan h3 {
+        font-size: 18px;
+        color: goldenrod;
+        margin-left: 16px;
+    }
+
+    #advan ul {
+        color: grey;
+    }
+
+    #advan li {
+        margin: 5px 0 0 20px;
+        display: block;
+    }
+</style>
+
+<body>
+    <center>
+        <h2><i>&lt;Kim minju 팬클럽 가입&gt;</i></h2>
+        <table>
+            <tr>
+                <th colspan="2"><b>팬클럽 가입양식</b></th>
+            </tr>
+            <tr>
+                <th>아이디</th>
+                <td>
+                    <input type="text" size="9px" required>
+                    <input type="button" value="중복확인">
+                </td>
+            </tr>
+            <tr>
+                <th>패스워드</th>
+                <td colspan="2">
+                    <input type="password" size="9px" required>
+                </td>
+            </tr>
+            <tr>
+                <th>성별</th>
+                <td colspan="2">
+                    <label><input type="radio" name="gen" value="0">남</label>
+                    <label><input type="radio" name="gen" value="1">여</label>
+                </td>
+            </tr>
+            <tr>
+                <th>국적</th>
+                <td colspan="2">
+                    <label>
+                        <input type="text" list="nationalitylist" name="nationality">
+                        <datalist id="nationalitylist">
+                            <option value="Japan">일본</option>
+                            <option value="China">중국</option>
+                            <option value="Korea">대한민국</option>
+                            <option value="Thailand">태국</option>
+                            <option value="Cambodia">캄보디아</option>
+                            <option value="Romania">루마니아</option>
+                            <option value="France">프랑스</option>
+                            <option value="Germany">독일</option>
+                            <option value="Greece">그리스</option>
+                            <option value="Ghana">가나</option>
+                            <option value="Ukraine">우크라이나</option>
+                        </datalist>
+                        <input type="submit" value="국적변경">
+                    </label>
+
+                </td>
+            </tr>
+            <tr>
+                <th>휴대폰</th>
+                <td colspan="2">
+                    <select name="phone">
+                        <option value="1" selected>010</option>
+                        <option value="2">011</option>
+                        <option value="3">017</option>
+                    </select>
+                    -
+                    <input type="text" size="5px">
+                    -
+                    <input type="text" size="5px">
+                </td>
+            </tr>
+            <tr>
+                <th>이메일</th>
+                <td colspan="2">
+                    <input type="text" size="38px">
+                </td>
+            </tr>
+            <tr>
+                <th>생일</th>
+                <td colspan="2">
+                    <input type="text" value="연도-월-일" size="13px">
+                </td>
+            </tr>
+
+            <tr>
+                <th id="hi">가입인사</th>
+                <td colspan="2">
+                    <textarea rows="5" cols="57">회원들에게 간단한 가입인사를 남겨주세요</textarea>
+                </td>
+            <tr>
+                <th>증명사진</th>
+                <td colspan="2">
+                    <input type="file">
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2">
+                    <input type="button" value="가입하기">
+                    <input type="reset" value="다시작성">
+                </th>
+            </tr>
+        </table>
+
+        <div id="ad">
+            <h2><i>&lt;Kim minju 팬클럽 가입시 혜택&gt;</i></h2>
+            <main>
+                <section id="advan">
+                    <div>
+                        <h3>굿즈</h3>
+                        <ul>
+                            <li>김민주 공식 팬클럽 '민들레' 회원 카드 제공</li>
+                            <li>김민주 공식 팬클럽 '민들레' 스페셜 키트 제공</li>
+                        </ul>
+                        <h3>팬카페</h3>
+                        <ul>
+                            <li>김민주 공식 팬카페 내 우수회원 등급 조정</li>
+                            <li>김민주 공식 팬카페 내 '민들레' 전용 공간 제공</li>
+                        </ul>
+                        <h3>팬미팅</h3>
+                        <ul>
+                            <li>김민주 국내 단독 팬미팅 시 선예매 혜택 제공</li>
+                            <li>음악중심 MC 팬 석 우선 참여 제공</li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </center>
+
+</body>
+</head>
+
+</html>

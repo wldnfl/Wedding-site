@@ -1,0 +1,19 @@
+* {
+    background-color: aliceblue;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+.m:link {
+    color: grey;
+}
+
+.m:visited {
+    color: grey;
+}
+
+.m:hover {
+    color: black;
+}

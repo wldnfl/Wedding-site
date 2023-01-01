@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<head>
+    <title>문의사항</title>
+    <style>
+        table {
+            width: 600px;
+            height: 300px;
+            text-align: center;
+            margin: 50px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <center>
+        <table id="a">
+            <tr>
+                <th>문의유형</th>
+                <td>
+                    <input type="radio" name="faq" value="a">팬클럽
+                    <input type="radio" name="faq" value="b">아이디
+                    <input type="radio" name="faq" value="c">환불
+                    <input type="radio" name="faq" value="d">기타
+                </td>
+            </tr>
+            <tr>
+                <th>제목</th>
+                <td>
+                    <input type="text" value="15자 이내 입력">
+                    <input type="radio">비밀글
+                </td>
+            </tr>
+            <tr>
+                <th>내용</th>
+                <td>
+                    <textarea rows="10" cols="40">내용 입력</textarea>
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <table>
+            <tr>
+                <td>
+                <input type="button" value="비밀글 제외">
+            </td>
+            </tr>
+            <tr>
+                <th>번호</th>
+                <th>답변여부</th>
+                <th>구분</th>
+                <th>내용</th>
+                <th>작성자</th>
+                <th>등록일자</th>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>답변예정</td>
+                <td>기타</td>
+                <td>...</td>
+                <td>go***</td>
+                <td>2022-12-30</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>답변완료</td>
+                <td>환불</td>
+                <td>가입 후 환불
+                    <img src="./img/key.png" width="15" height="15">
+                </td>
+                <td>jia***</td>
+                <td>2022-12-28</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>답변완료</td>
+                <td>아이디</td>
+                <td>아이디 입력 실패</td>
+                <td>ji***</td>
+                <td>2022-12-23</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>답변완료</td>
+                <td>팬클럽</td>
+                <td>키트 구성품
+                    <img src="./img/key.png" width="15" height="15">
+                </td>
+                <td>pa***</td>
+                <td>2022-12-20</td>
+            </tr>
+            <tr>
+                <td rowspan="5">1/1 페이지</td>
+            </tr>
+        </table>
+    </center>
+</body>
