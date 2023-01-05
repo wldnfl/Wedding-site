@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<head>
+    <title>구구단</title>
+    <style>
+        .gugu {
+            color: #fff;
+            width: 300px;
+            height: 450px;
+            border-radius: 25px;
+            background-color: #81A5F9;
+            border: 3px solid #0a3591;
+            text-align: center;
+            line-height: 30px;
+            padding: 10px;
+        }
+
+        .age {
+            color: #fff;
+            width: 300px;
+            height: 150px;
+            border-radius: 25px;
+            background-color: #f981cb;
+            border: 3px solid #da1577;
+            text-align: center;
+            line-height: 30px;
+            padding: 10px;
+            margin: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function gugudan() {
+            var a = document.getElementById('num').value;
+            var temp = "";
+            var result = "";
+            for (i = 1; i < 10; i++) {
+                result = a * i;
+                temp += a + " x " + i + " = " + result + "<br>";
+            }
+            document.getElementById('guguStart').innerHTML = temp;
+        }
+    </script>
+    <center>
+        <div class="gugu">
+            <h1>구구단</h1>
+            <h3>구구단 몇 단을 출력할까요?</h3>
+
+            <input type="text" id="num" size="10px">
+            <button onclick="gugudan()">출력</button>
+
+            <p id="guguStart"></p>
+        </div>
+        <div class="age">
+
+            <h2>나이 구하기</h2>
+            <script>
+                const today = new Date();
+                const birthDate = new Date(2002, 11, 14);
+
+                let age = today.getFullYear()
+                    - birthDate.getFullYear()
+                    + 1;
+
+                document.writeln("생년월일: 2002.11.14 <br>");
+                document.write("나이는: " + age);
+
+            </script>
+
+        </div>
+    </center>
+</body>
