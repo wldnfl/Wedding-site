@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="main.css">
+    </link>
+    <link type="text/css" rel="stylesheet" href="bottom.css">
+    </link>
+    <title>채플웨딩</title>
+    <style>
+        #chapel p {
+            padding-left: 5px;
+        }
+
+        #bottom {
+            background-color: rgb(65, 64, 64);
+            height: 200px;
+            color: white;
+            font-size: 30px;
+            padding-top: 30px;
+        }
+
+        td {
+            padding: 5px;
+        }
+
+        #chapel {
+            padding-left: 37%;
+            padding-right: 37%;
+            margin-bottom: 50px;
+        }
+
+        button {
+            background-color: rgb(65, 64, 64);
+            border-radius: 0px;
+            font-size: 15px;
+            padding: 6px;
+            width: 120px;
+            color: white;
+        }
+
+        button:hover {
+            opacity: 0.7;
+        }
+
+        #info {
+            width: 500px;
+            height: 90px;
+        }
+
+        #info:hover {
+            background: rgb(241, 198, 105);
+            border-radius: 10px;
+            transition: all 1.5s;
+        }
+
+        #back:hover {
+            color: lightslategray;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <a href="./hw12.html">
+            <img src="./img/love.png" id="door" name="top"></a>
+        <nav>
+            <ul id="bar">
+                <li><a href="./guide.html">가이드</a></li>
+                <li><a href="./album.html">제작앨범</a></li>
+                <li><a href="./booking.html">예약하기</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="chapel">
+        <p><a href="./booking.html" id="back">&lt; 뒤로</a></p>
+        <h2>채플 웨딩</h2>
+        <p id="info">
+            종교에 관계없이 최근 많이 사랑해주시는 상품입니다
+            스테인글라스 창으로 비치는 풍부한 자연채광 덕분에
+            더욱 축복받는 듯한 분위기와 전문가의 진행으로
+            한 층 더 멋스러운 웨딩으로 연출됩니다
+            야외 결혼식이 부담스러우신 신랑, 신부님께 추천해드립니다.
+        </p>
+        <h4>예약할 날짜 및 시간을 선택하세요.</h4>
+        <hr>
+        <p>날짜 선택 <input type="date"></p>
+        <p>시간 선택
+            <select>
+                <option value="0">10:00</option>
+                <option value="1">11:00</option>
+                <option value="2">12:00</option>
+                <option value="3">13:00</option>
+                <option value="4">14:00</option>
+                <option value="5">15:00</option>
+            </select>
+        </p>
+        <h4>정보 입력</h4>
+        <hr>
+        <table>
+            <tr>
+                <td>이름 *<br><input id="name" type="text" size="10px"></td>
+                <td> E-mail *<br><input id="email" type="email"></td>
+            </tr>
+            <tr>
+                <td>전화번호<br><input type="tel" size="12px"></td>
+            </tr>
+            <tr>
+                <td>메시지 작성<br><textarea cols="35" rows="3"></textarea></td>
+                <td><button onclick="login()">결제하기</button></td>
+            </tr>
+        </table>
+    </div>
+    <center>
+        <div id="bottom">
+            <a href="#top">
+                <img src="./img/top.png" width="50" height="50"></a><br>
+            Top<br><br>
+            <div id="btext">주소: 서울 성북구 종암로 123 |
+                전화: 02-205-0831<br>
+                FAX: 032-801-9279 |
+                대표: 이지우<br>
+                Copyright &#169; 로맨틱웨딩 All Right Reserved.
+            </div>
+        </div>
+    </center>
+</body>
+<script>
+    function login() {
+        var name = document.querySelector('#name');
+        var email = document.querySelector('#email');
+        if (name.value == "" || email.value == "") {
+            alert("필수항목 모두 입력해 주십시오.");
+        }
+        else {
+            confirm("결제화면으로 이동하시겠습니까?");
+        }
+    }
+</script>

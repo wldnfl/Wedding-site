@@ -1,0 +1,14 @@
+#bottom {
+    background-color: rgb(65, 64, 64);
+    height: 200px;
+    color: white;
+    font-size: 30px;
+    padding-top: 30px;
+    text-align: center;
+}
+
+#btext {
+    font-size: 15px;
+    text-align: left;
+    margin-left: 20px;
+}
